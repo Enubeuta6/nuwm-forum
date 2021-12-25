@@ -7,6 +7,7 @@
 {% block content %}
 
 	{% if latest_articles_list %}
+<div class="mx-auto pt-5 fs-4" style="width: 200px;">
 
 	{% for a in latest_articles_list %}
 
@@ -14,7 +15,7 @@
 		<a href="{% url 'articles:detail' a.id %}">{{a.article_title}}</a>
 		</div>
 	{% endfor %}
-
+</div>
 
 	{% else %}
 
